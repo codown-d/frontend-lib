@@ -1,0 +1,29 @@
+{
+  "name": "@tz/antd",
+  "version": "0.0.1",
+  "description": "基于 antd 的二次封装",
+  "license": "MIT",
+  "author": {
+    "name": "tensor"
+  },
+  "main": "./src/index.ts",
+  "scripts": {
+    "build": "tsdx build",
+    "link:global": "pnpm link --global",
+    "watch": "tsdx watch"
+  },
+  "dependencies": {
+    "@tz/translate": "workspace:*",
+    "@tz/utils": "workspace:*",
+    "rollup-plugin-postcss": "4.0.2"
+  },
+  "peerDependencies": {
+    "antd": "*",
+    "classnames": "*"
+  },
+  "publishConfig": {
+    "main": "dist/index.js",
+    "module": "dist/antd.esm.js",
+    "typings": "dist/index.d.ts"
+  }
+}

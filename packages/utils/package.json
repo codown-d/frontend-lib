@@ -1,0 +1,19 @@
+{
+  "name": "@tz/utils",
+  "version": "0.0.1",
+  "description": "工具类函数封装",
+  "author": {
+    "name": "tensor"
+  },
+  "main": "./src/index.ts",
+  "scripts": {
+    "build": "tsdx build",
+    "link:global": "pnpm link --global",
+    "watch": "tsdx watch"
+  },
+  "publishConfig": {
+    "main": "dist/index.js",
+    "module": "dist/utils.esm.js",
+    "typings": "dist/index.d.ts"
+  }
+}

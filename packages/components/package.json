@@ -1,0 +1,26 @@
+{
+  "name": "@tz/components",
+  "version": "1.0.0",
+  "description": "自定义组件库",
+  "license": "MIT",
+  "author": "tensor",
+  "main": "./src/index.ts",
+  "scripts": {
+    "build": "tsdx build",
+    "link:global": "pnpm link --global",
+    "watch": "tsdx watch"
+  },
+  "dependencies": {
+    "ahooks": "3.7.8",
+    "lodash": "4.17.21",
+    "use-immer": "0.9.0"
+  },
+  "devDependencies": {
+    "@types/lodash": "4.14.202"
+  },
+  "publishConfig": {
+    "main": "dist/index.js",
+    "module": "dist/components.esm.js",
+    "typings": "dist/index.d.ts"
+  }
+}
